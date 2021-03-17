@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Pepper Automapping</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="place_me_in_front_of_an_aruco_mat">Place me in <b>front</b> of an <b>ArUco mat</b></string>
+    <string name="open_my_hatch_to_move_me_if_necessary">Open my hatch to move me if necessary</string>
+    <string name="explore">Explore</string>
+    <string name="cancel">Cancel</string>
+    <string name="a_map_is_already_saved_do_you_want_to_overwrite_it">A map is already saved, do you want to <b>overwrite</b> it?</string>
+    <string name="yes">Yes</string>
+    <string name="the_current_map_will_be_lost_permanently">(The current map will be lost permanently)</string>
+</resources>

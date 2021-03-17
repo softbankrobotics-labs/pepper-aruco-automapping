@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_main"
+    >
+
+    <Button
+        android:id="@+id/newMapButton"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="40dp"
+        android:padding="80dp"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:layout_weight="1"
+        android:text="+ New Map"
+        android:fontFamily="sans-serif-condensed-light"
+        android:background="@android:color/transparent"
+        android:onClick="onNewMapButtonClicked"
+        android:drawableBottom="@drawable/ic_emptymap"
+        android:textSize="35sp"
+        android:textColor="#688CC9"
+        />
+
+    <View
+        android:layout_marginTop="110dp"
+        android:id="@+id/divider"
+        android:layout_width="1dp"
+        android:layout_height="440dp"
+        android:layout_weight="0"
+        android:background="@android:color/black"
+        />
+
+    <Button
+        android:id="@+id/localizeButton"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginRight="40dp"
+        android:alpha="0.2"
+        android:padding="80dp"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:layout_weight="1"
+        android:enabled="false"
+        android:text="Use map"
+        android:fontFamily="sans-serif-condensed-light"
+        android:background="@android:color/transparent"
+        android:onClick="onLocalizeButtonClicked"
+        android:drawableBottom="@drawable/ic_full_map"
+        android:textSize="35sp"
+        android:textColor="#688CC9"
+        />
+
+</LinearLayout>

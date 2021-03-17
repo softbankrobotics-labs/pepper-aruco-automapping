@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/chooseMapOrPatrolLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        layout="@layout/choose_map_or_patrol_screen" />
+
+    <include
+        android:id="@+id/overwriteLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        layout="@layout/overwrite_screen" />
+
+    <include
+        android:id="@+id/explanationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        layout="@layout/explanation_screen" />
+
+    <include
+        android:id="@+id/mappingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        layout="@layout/mapping_screen" />
+
+    <include
+        android:id="@+id/loadingMapLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        layout="@layout/loading_map_screen" />
+
+    <include
+        android:id="@+id/patrolLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        layout="@layout/patrol_screen" />
+
+    <include
+        android:id="@+id/flapOpenLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        layout="@layout/flap_open_screen" />
+
+
+</LinearLayout>

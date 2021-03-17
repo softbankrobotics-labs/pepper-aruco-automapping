@@ -1,0 +1,112 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/explanationConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!--
+    android:background="@drawable/localize_warning"
+    tools:showIn="@layout/activity_main"
+    -->
+
+    <TextView
+        android:id="@+id/explanationLeft"
+        android:layout_width="230dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="668dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="end"
+        android:text="@string/place_me_in_front_of_an_aruco_mat"
+        android:textAllCaps="false"
+        android:textColor="@color/blueText"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ExplanationRight"
+        android:layout_width="271dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="664dp"
+        android:layout_marginTop="116dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="start"
+        android:text="@string/open_my_hatch_to_move_me_if_necessary"
+        android:textAllCaps="false"
+        android:textColor="@color/blueText"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/av_from_layout"
+        android:layout_width="442dp"
+        android:layout_height="385dp"
+        android:layout_gravity="top"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="72dp"
+        android:layout_weight="1"
+        android:scaleX="-1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/pepper_aruco_push_lottie"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/arrow1Right"
+        android:layout_width="61dp"
+        android:layout_height="216dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/ExplanationRight"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_explanation_arrow1" />
+
+    <ImageView
+        android:id="@+id/arrow2Left"
+        android:layout_width="48dp"
+        android:layout_height="168dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="84dp"
+        app:layout_constraintStart_toEndOf="@+id/explanationLeft"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_explanation_arrow2" />
+
+    <Button
+        android:id="@+id/exploreButton"
+        android:layout_width="427dp"
+        android:layout_height="87dp"
+        android:background="@drawable/ic_explore_button"
+        android:onClick="onExploreButtonClicked"
+        android:text="@string/explore"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        android:fontFamily="sans-serif-condensed-light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.893" />
+
+    <Button
+        android:id="@+id/localizeButton"
+        android:layout_width="143dp"
+        android:layout_height="52dp"
+        android:background="@drawable/ic_cancel_button"
+        android:onClick="onExplanationCancelButtonClicked"
+        android:text="@string/cancel"
+        android:textSize="25sp"
+        android:textColor="@color/blueText"
+        app:layout_constraintBottom_toBottomOf="@+id/exploreButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.207"
+        app:layout_constraintStart_toEndOf="@+id/exploreButton"
+        app:layout_constraintTop_toTopOf="@+id/exploreButton"
+        app:layout_constraintVertical_bias="0.531" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

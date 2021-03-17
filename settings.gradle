@@ -1,0 +1,2 @@
+include ':app', ':peppermapping'
+rootProject.name='ArUco Automapping'

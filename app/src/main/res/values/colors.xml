@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorAttract">#EA5F72</color>
+    <color name="colorDialogue">#0085AD</color>
+    <color name="colorActiveState">#008d94</color>
+    <color name="colorPreviousState">#84C6B9</color>
+    <color name="blueText">#688CC9</color>
+</resources>
