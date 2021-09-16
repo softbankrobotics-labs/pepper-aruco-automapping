@@ -46,7 +46,7 @@ This library will help you:
 
 ## 1. Video demonstration
 
-
+Please watch the following video on YouTube to see how this library works in practice: https://youtu.be/TV6yXSxwYlk
 
 ## 2. ArUco markers
 
